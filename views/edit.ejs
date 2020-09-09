@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edit</title>
+</head>
+<body>
+    <form action="/edit/<%= data._id %>" method="POST">
+        <div>
+            <div class="field">
+                <label for="label">Judul Buku</label>
+                <input type="text" name="nama" placeholder="Nama" value="<%= data.nama %>">
+            </div>
+            <div class="field">
+                <label for="label">author</label>
+                <input type="text" name="author" placeholder="Enter players name" value="<%= data.author %>">
+            </div>
+            <div class="field">
+                <label for="label">penerbit</label>
+                <input type="text" name="penerbit" placeholder="Enter coach name" value="<%= data.penerbit %>">
+            </div>
+            <div class="field">
+                <label for="label">tahun</label>
+                <input type="number" name="tahun_terbit" placeholder="Enter players name" value="<%= data.tahun_terbit %>">
+            </div>
+            <div class="field">
+                <label for="label">halaman</label>
+                <input type="number" name="jumlah_halaman" placeholder="Enter players name" value="<%= data.jumlah_halaman %>">
+            </div>
+        </div>
+            <button type="submit">Save</button>
+    </form>
+</body>
